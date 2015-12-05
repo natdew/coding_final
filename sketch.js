@@ -1,18 +1,26 @@
+//final project
+//interactive illustration narrative
+
+//give variables to each image
+var actOne;
+var phone;
+var actTwo;
+var actThree;
+
+//load the images
+function preload() {
+	actOne = loadImage("images/actOne.jpg");
+	phone = loadImage("images/phone.jpg");
+	actTwo = loadImage("images/actTwo.jpg");
+	actThree = loadImage("images/actThree.jpg");
+}
+
+//create a place to draw
 function setup() {
-	// create a place to draw
-	createCanvas(640, 360);
+	createCanvas(800, 600);
 }
 
 function draw() {
-	// clear the background
-	background(0, 0, 0);
-
-	// set a fill color
-	fill(255, 255, 255);
-
-	// set a stroke color
-	stroke(255, 0, 0);
-
-	// draw a circle
-	ellipse(320, 180, 100, 100);
+	//actOne
+	image(actOne, 0, 0);
 }
