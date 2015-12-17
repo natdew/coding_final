@@ -15,12 +15,10 @@ var actTwoPartThree;
 var actTwoPartFour;
 var actThree;
 var actThreePartTwo;
-//variables for the people & cockroach
+//variables for the main character
 var womanOne;
 var womanTwo;
 var womanThree;
-var fuckboii;
-var cockroach
 
 //load the images
 function preload() {
@@ -34,12 +32,10 @@ function preload() {
 	actTwoPartFour = loadImage("images/actTwoPartFour.png");
 	actThree = loadImage("images/actThree.png");
 	actThreePartTwo = loadImage("images/actThreePartTwo.png");
-	//load the people
+	//load the main character
 	womanOne = loadImage("images/womanOne.png");
 	womanTwo = loadImage("images/womanTwo.png");
 	womanThree = loadImage("images/womanThree.png");
-	//load the cockroaches
-	cockroach = loadImage("images/cockroach.png");
 }
 
 //create a place to draw
@@ -164,7 +160,6 @@ function drawPageActTwoPartThree() {
 	//act two part three - cockroach at feet
 	//add background image and cockroach images
 	image(actTwoPartThree, 0, 0);
-	image(cockroach, 100, 120);
 	//add text
 	fill(0);
 	textSize(20);
@@ -172,7 +167,7 @@ function drawPageActTwoPartThree() {
 	text("Ew!! A cockroach! Step on it!", 290, 40);
 	//click on cockroach to get to next scene
 	if (mouseIsPressed) {
-		if (mouseX > 118 && mouseX < 150 && mouseY > 146 && mouseY < 177) {
+		if (mouseX > 149 && mouseX < 247 && mouseY > 129 && mouseY < 221) {
 			currentPage = "actTwoPartFour";
 		}
 	}
