@@ -136,7 +136,7 @@ function drawPageActTwo() {
 	text("Oh no, a fuckboy. Click on him to make him go away!", 180, 40);
 	//mouse pressing on fuckboy goes to next scene
 	if (mouseIsPressed) {
-		if (mouseX > 8 && mouseX < 30 && mouseY > 380 && mouseY < 508) {
+		if (mouseX > 14 && mouseX < 38 && mouseY > 364 && mouseY < 493) {
 			currentPage = "actTwoPartTwo";
 		}
 	}
@@ -189,7 +189,7 @@ function drawPageActTwoPartFour() {
 	text("Almost home! Click on the fire hydrant to continue.", 173, 40);
 	//click on fire hydrant to get home
 	if (mouseIsPressed) {
-		if (mouseX > 40 && mouseX < 93 && mouseY > 490 && mouseY < 585) {
+		if (mouseX > 34 && mouseX < 114 && mouseY > 438 && mouseY < 578) {
 			currentPage = "actThree";
 		}
 	}
@@ -228,7 +228,7 @@ function drawPageActThreePartTwo() {
 	textSize(25);
 	textFont("Avenir");
 	text("Z", 586, 303);
-	text("Restart", 65, 554);
+	text("Restart", 67, 554);
 	//mouse pressing "restart" button restarts interaction
 	if (mouseIsPressed) {
 		if (mouseX > 38 && mouseX < 179 && mouseY > 523 && mouseY < 575) {
